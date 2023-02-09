@@ -47,32 +47,10 @@ var media = (students[0].math + students[1].math + students[2].math + students[3
 
 console.log( `A média da turma é ${media}`)
 
-if (students[0].math >= 7) {
-    console.log(`Aluna ${students[0].name} aprovada com nota ${students[0].math}!`)
+for (let i = 0; i < students.length; i++) {
+    if (students[i].math >= 7) {
+    console.log(`Aluno(a) ${students[i].name} aprovado(a) com nota ${students[i].math}!`)
 } else {
-    (`Aluna ${students[0].name} reprovada com nota ${students[0].math}!`)
+    console.log(`Aluno(a) ${students[i].name} reprovado(a) com nota ${students[i].math}!`)
 }
-
-if (students[0].math >= 7) {
-    console.log(`Aluno ${students[1].name} aprovado com nota ${students[1].math}!`)
-} else {
-    (`Aluno ${students[1].name} reprovado com nota ${students[1].math}!`)
-}
-
-if (students[0].math >= 7) {
-    console.log(`Aluno ${students[2].name} aprovado com nota ${students[2].math}!`)
-} else {
-    (`Aluno ${students[2].name} reprovado com nota ${students[2].math}!`)
-}
-
-if (students[0].math >= 7) {
-    console.log(`Aluna ${students[3].name} aprovada com nota ${students[3].math}!`)
-} else {
-    (`Aluna ${students[3].name} reprovada com nota ${students[3].math}!`)
-}
-
-if (students[0].math >= 7) {
-    console.log(`Aluna ${students[4].name} aprovada com nota ${students[4].math}!`)
-} else {
-    (`Aluna ${students[4].name} reprovada com nota ${students[4].math}!`)
 }
